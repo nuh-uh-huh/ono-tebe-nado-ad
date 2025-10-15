@@ -1,36 +1,31 @@
-body {
-  margin: 0;
-  font-family: 'Raleway-Bold', Arial, sans-serif;
-  background: #fff;
-}
-
 .top-header {
   width: 100vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 0 0 0;
+  justify-content: center;   /* center the whole flex container horizontally */
+  align-items: flex-start;
+  padding: 80px 80px 0 80px;
   box-sizing: border-box;
 }
 
-.left-menu {
+.left-menu,
+.contacts {
+  flex: 1;                   /* make left and right side take equal width */
   display: flex;
   align-items: center;
+  min-width: 280px;
+}
+
+.left-menu {
+  justify-content: flex-end; /* align left text to right */
   gap: 16px;
-  min-width: 390px;
-  justify-content: flex-end;
 }
 
 .left-link {
   color: #222;
-  text-decoration: none;
+  text-decoration: underline;
   font-size: 24px;
   line-height: 1;
   transition: color 0.2s;
-}
-
-.left-link.underline {
-  text-decoration: underline;
 }
 
 .circle {
@@ -42,22 +37,16 @@ body {
 }
 
 .logo {
-  flex: 0 0 auto;
-  margin: 0 80px;
+  flex: 0 0 auto;              /* maintain natural logo size */
+  margin: 0 40px;              /* some horizontal spacing around logo */
+  display: flex;
+  justify-content: center;
 }
 
 .logo img {
   width: 120px;
   height: auto;
   display: block;
-}
-
-.contacts {
-  min-width: 280px;
-  text-align: left;
-  color: #222;
-  font-size: 22px;
-  line-height: 1.45;
 }
 
 .contact-link {
@@ -79,5 +68,82 @@ body {
     justify-content: center;
     min-width: unset;
     font-size: 18px;
+    text-align: center;
+    align-self: unset;
   }
+}
+
+/* Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  color: #111;
+  line-height: 1.5;
+}
+a {
+  color: black;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 40px;
+  font-size: 14px;
+  font-weight: 400;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-weight: 400;
+}
+nav a {
+  text-decoration: underline;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: none;
+}
+.logo {
+  background: url('./images/logo-black.svg') no-repeat center/contain;
+  margin: 0 40px;              /* some horizontal spacing around logo */
+  justify-content: center;     /* center align images */
+}
+.left-menu,
+.contact {
+  flex: 1;                   /* make left and right side take equal width */
+  display: block;
+  align-items: center;
+  min-width: 300px;
+}
+.contact {
+  justify-content: flex-end;
+  text-align: left; /* align right text to left */
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 0.9;
+  font-style: normal;
+}
+
+.contacts {
+  justify-content: flex-end; /* align right text to left */
+  text-align: left;
+  font-size: 22px;
+  line-height: 1.45;
 }
