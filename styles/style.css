@@ -127,7 +127,6 @@ nav a.active {
 }
 .left-menu,
 .contact {
-  flex: 1;                   /* make left and right side take equal width */
   display: block;
   align-items: center;
   min-width: 300px;
@@ -139,6 +138,7 @@ nav a.active {
   font-weight: 300;
   line-height: 0.9;
   font-style: normal;
+  padding-left: 25%;
 }
 
 .contacts {
