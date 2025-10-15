@@ -21,23 +21,101 @@
       <div class="logo">
         <img src="./images/logo-black.svg" alt="Logo">
       </div>
-
-      <div class="contact" aria-label="Контактная информация">
-        <a href="tel:+99995555555" class="left-link">+9 999 555 5555</a><br>
-        <a href="mailto:info@sobaka.ge" class="left-link">info@sobaka.ge</a><br>
-        наб. Принсенграхт 263-<br/>265, Амстердам
+      
+      <div class="header-contacts">
+        <ul class="header-contacts-list">
+          <li><a href="tel:+99995555555">+9 999 555 5555</a></li>
+          <li><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></li>
+          <li>наб. Принсенграхт 263-265, Амстердам</li>
+        </ul>
       </div>
     </header>
-
-    <section class="hero" role="banner" aria-label="Аукцион вещей, в которые никто не верил">
-      <div class="hero-text">
-        <span>Оно<br></span>
-        <span>тебе<br></span>
-        <span>надо<br></span>
-      </div>
-      <div class="hero-sub">Аукцион вещей, в которые никто не верил</div>
-      <button class="btn-bid" type="button">Сделать ставку</button>
+      
     </section>
+    <main class="main">
+      <section class="cover">
+        <div class="cover-overlay"></div>
+        <div class="cover-content">
+          <div class="cover-title">
+            <h1 class="cover-title-text cover-title-text_left">ОНО</h1>
+            <h1 class="cover-title-text cover-title-text_center">ТЕБЕ</h1>
+            <h1 class="cover-title-text cover-title-text_right">НАДО</h1>
+          </div>
+          <div class="cover-description">
+            <p class="cover-description-text">Аукцион вещей, в которые никто не верил</p>
+            <button class="btn-bid" type="button">Сделать ставку</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="lots" id="lots">
+        <h2 class="lots-heading">Лоты</h2>
+        <div class="lots-grid">
+          <article class="lot-card">
+            <a href="#" class="lot-card-link">
+              <div class="lot-card-overlay"></div>
+              <h3 class="lot-card-title">Фильм режиссёра, который бросил киношколу</h3>
+              <p class="lot-card-text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+            </a>
+          </article>
+          <article class="lot-card">
+            <a href="#" class="lot-card-link">
+              <div class="lot-card-overlay"></div>
+              <h3 class="lot-card-title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+              <p class="lot-card-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+            </a>
+          </article>
+          <article class="lot-card">
+            <a href="#" class="lot-card-link">
+              <div class="lot-card-overlay"></div>
+              <h3 class="lot-card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+              <p class="lot-card-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+            </a>
+          </article>
+        </div>
+        <a href="/" class="lots-more-link">посмотреть больше</a>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-logo">
+          <div class="about-logo-circle">
+            <img src="images/logo-white.svg" alt="Логотип" id="logo-circle" />
+          </div>
+        </div>
+        <div class="about-content">
+          <h2 class="about-heading">Об аукционе</h2>
+          <div class="about-text">
+            <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+            <p>Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <address class="footer-address">
+          <ul class="footer-address-list">
+            <li><a href="tel:+99995555555">+9 999 555 5555</a></li>
+            <li><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></li>
+            <li>наб. Принсенграхт 263-265, Амстердам</li>
+          </ul>
+        </address>
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li><a href="#home" class="footer-link">главная</a></li>
+            <li><a href="#lots" class="footer-link">посмотреть лоты</a></li>
+            <li><a href="#about" class="footer-link">об аукционе</a></li>
+          </ul>
+        </nav>
+        <div class="footer-social-links">
+          <a href="#" aria-label="ВКонтакте"><img src="images/vk.svg" alt="VK" width="48" height="48" /></a>
+          <a href="#" aria-label="YouTube"><img src="images/yt.svg" alt="YouTube" width="48" height="48" /></a>
+          <a href="#" aria-label="Pinterest"><img src="images/pinterest.svg" alt="Pinterest" width="48" height="48" /></a>
+        </div>
+      </div>
+    </footer>
+
 
   </body>
 </html>
