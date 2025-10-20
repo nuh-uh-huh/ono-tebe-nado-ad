@@ -299,7 +299,7 @@ nav {
   z-index: 2;
   margin-top: auto;
   position: absolute;
-  bottom: 50px;
+  bottom: 46px;
   left: 40px;
   right: 40px;
 }
@@ -321,7 +321,7 @@ nav {
 .about-logo {
   flex-shrink: 0;
   margin-left: 47px;
-  margin-top: -23px;
+  margin-top: -24px;
 }
 
 .about-logo-circle {
@@ -341,7 +341,8 @@ nav {
 
 .about-content {
   width: 693px;
-  margin-top: 73px;
+  margin-top: 71px;
+  margin-left: -19px;
 }
 
 .about-heading {
