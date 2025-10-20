@@ -6,6 +6,7 @@
 }
 
 body {
+  font-family: Raleway, sans-serif;
   max-width: 1100px;
   margin: 0 auto;
   position: relative;
@@ -45,6 +46,7 @@ img {
 
 /* Header section */
 header {
+  font-family: 'Raleway-Regular', Arial, sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
