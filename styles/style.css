@@ -296,9 +296,12 @@ nav {
   font-size: 20px;
   font-weight: 400;
   line-height: 120%;
-  position: relative;
   z-index: 2;
   margin-top: auto;
+  position: absolute;
+  bottom: 62px;
+  left: 40px;
+  right: 40px;
 }
 
 .lots-more-link {
