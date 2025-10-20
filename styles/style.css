@@ -292,7 +292,7 @@ nav {
   z-index: 2;
   margin-top: auto;
   position: absolute;
-  bottom: 48px;
+  bottom: 46px;
   left: 40px;
   right: 40px;
 }
@@ -334,7 +334,7 @@ nav {
 
 .about-content {
   width: 693px;
-  margin-top: 74px;
+  margin-top: 76px;
   margin-left: -23px;
 }
 
@@ -358,7 +358,7 @@ nav {
 .footer {
   width: 1100px;
   height: 180px;
-  margin-top: 180px;
+  margin-top: 120px;
 }
 
 .footer-container {
